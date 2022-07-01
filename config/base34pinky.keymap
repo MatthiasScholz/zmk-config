@@ -9,9 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define HDN 0
-#define NAV 1
-#define SYM 2
+#define NEO 0
+#define HDN 1
+#define NAV 2
+#define SYM 3
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -71,6 +72,20 @@
  
         keymap {
                 compatible = "zmk,keymap";
+
+        neoalpha {
+        label = "NEO";
+        bindings = <
+// TODO Find a place for missing letters: Ü, Ö, Ä, (ẞ)
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                      &kp V         &kp L         &kp C         &kp W             &kp K       &kp H         &kp G         &kp F
+&none   &kp X         &kp I         &kp A         &kp E         &kp O             &kp S       &kp N         &kp R         &kp T         &kp Q  &kp Y
+        &kp U         &none         &none         &kp P         &kp Z             &kp B       &kp M         &kp COMMA     &kp DOT       &kp D
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+        >;
+        };
 
 // TODO ADAPT TO NEO2 Layout
         handsdown {

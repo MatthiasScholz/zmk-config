@@ -17,7 +17,7 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-#define ALPHA_ALL HDN
+#define ALPHA_ALL NEO HDN
 
 /* Missing alpha */
 COMBO(dot, &kp DOT, 11 12, SYM) // . for sym
