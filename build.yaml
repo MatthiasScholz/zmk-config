@@ -16,14 +16,6 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: battoota_left
+    shield: basbousa_left
   - board: nice_nano_v2
-    shield: battoota_right
-  # - board: nice_nano_v2
-  #   shield: basbousa_left
-  # - board: nice_nano_v2
-  #   shield: basbousa_right
-  - board: nice_nano_v2
-    shield: konafa_left
-  - board: nice_nano_v2
-    shield: konafa_right
+    shield: basbousa_right
