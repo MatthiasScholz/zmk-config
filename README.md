@@ -1,12 +1,11 @@
 # zmk-config
 
-This is my personal [ZMK firmware][1] configuration for my current 30-key wireless keyboards [Battoota](https://github.com/AlaaSaadAbdo/battoota).
-
-I use this keyboard for both windows and mac, to type in Arabic and English
+This is my personal [ZMK firmware][1] configuration
+for my friends current wireless keyboards [Battoota](https://github.com/AlaaSaadAbdo/battoota).
 
 ## Layout
 
-![](layout.png) 
+- [ ] TBD
 
 ## References
 
@@ -16,6 +15,9 @@ I use this keyboard for both windows and mac, to type in Arabic and English
 
 ## Links
 
-[Low Profile Keyboards discod](https://discord.gg/69UM9sQF8q). I got a lot of help there.
+- [Low Profile Keyboards discod](https://discord.gg/69UM9sQF8q). I got a lot of help there.
+- [Key Codes](https://zmk.dev/docs/codes)
+- [Conditional Layers](https://zmk.dev/docs/features/conditional-layers)
+- [Key Press behavior](https://zmk.dev/docs/behaviors/key-press)
 
 [1]: https://github.com/zmkfirmware/zmk
