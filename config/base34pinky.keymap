@@ -10,9 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define NEO 0
-#define HDN 1
-#define NAV 2
-#define SYM 3
+#define NEOSYM 1
+#define NEONAV 2
+#define HDN 3
+#define NAV 4
+#define SYM 5
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -76,16 +78,48 @@
         neoalpha {
         label = "NEO";
         bindings = <
-// TODO Find a place for missing letters: Ü, Ö, Ä, (ẞ)
+// TODO Find a place for missing letters: Ü, Ö, Ä, (ẞ) - find the names
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp V         &kp L         &kp C         &kp W             &kp K       &kp H         &kp G         &kp F
-&none   &kp X         &kp I         &kp A         &kp E         &kp O             &kp S       &kp N         &kp R         &kp T         &kp Q  &kp Y
+&none   &kp X         &kp I         &kp A         &kp E         &kp O             &kp S       &kp N         &kp R         &kp T         &kp Q        &kp Y
         &kp U         &none         &none         &kp P         &kp Z             &kp B       &kp M         &kp COMMA     &kp DOT       &kp D
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
         >;
         };
+
+        neosym {
+        label = "NEOSYM";
+        bindings = <
+// TODO Find a place for missing symbols: #, &
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                    &kp UNDERSCORE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET     &kp EXCLAMATION &kp LESS_THAN        &kp GREATER_THAN      &kp EQUAL
+&none &none         &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK  &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS         &kp SEMICOLON  &kp AT_SIGN
+      &kp BACKSLASH &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE     &kp PLUS        &kp PERCENT          &kp DOUBLE_QUOTES     &kp SINGLE_QUOTES &kp COLON
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
+        >;
+//
+        >;
+        };
+
+        neonav {
+        label = "NEONAV";
+        bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                    &kp BACKSPACE &kp UP      &kp DELETE     &kp PAGE_DOWN          &kp N7        &kp N8        &kp N9        &kp PLUS
+&none &kp PAGE_UP   &kp LEFT      &kp DOWN    &kp RIGHT      &kp END                &kp N4        &kp N5        &kp N6        &kp MINUS      &kp SEMICOLON  &kp DOT
+      &kp HOME      &kp TAB       &kp INSERT  &kp RETURN     &none                  &kp N1        &kp N2        &kp N3        &kp EQUAL      &kp COMMA
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
+        >;
+//
+        >;
+        };
+
 
 // TODO ADAPT TO NEO2 Layout
         handsdown {
