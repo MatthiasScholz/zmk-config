@@ -12,10 +12,6 @@
 #define HDN 0
 #define NAV 1
 #define SYM 2
-#define HDNW 3
-#define ARAQ 4
-#define NAVW 5
-#define SYMW 6
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -75,7 +71,8 @@
  
         keymap {
                 compatible = "zmk,keymap";
-                      
+
+// TODO ADAPT TO NEO2 Layout
         handsdown {
             label = "HDN";
             bindings = <
@@ -89,6 +86,7 @@
             >;
         };
 
+// INFO Alaa uses it for the arrows
         navitation {
             label = "NAV";
             bindings = <
@@ -114,57 +112,7 @@
             >;
         };
 
-        handsdown_windows {
-            label = "HDNW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                      &kp F         &kp L         &kp P         &kp B             &kp SLASH     &kp X         &kp SQT       &kp J
-&kp Z   &kp W         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp Q
-        &kp R         &kp C         &kp M         &kp D         &kp V             &kp DOT       &kp U         &kp O         &kp Y         &kp H
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
 
-        arabic_qwerty {
-            label = "ARAQ";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O        
-&kp Q  &kp Z         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SLASH &kp SEMICOLON
-       &kp A         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp P 
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        navigation_windows {
-            label = "NAVW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp ENTER     &kp BACKSPACE  &kp TAB      &kp LC(BACKSPACE)   &kp LC(BACKSPACE)  &none         &kp UP        &kp LA(F4)    
- &none  &none        SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp DELETE          &none              &kp LEFT      &kp DOWN      &kp RIGHT     &none  &none
-     SK(LGUI)        &kp LC(X)     &kp LC(C)      &kp LC(V)    &kp LC(A)           &kp LC(A)          &kp ENTER     &kp BACKSPACE &kp TAB       &kp LC(LA(LS(P)))
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans          &trans            &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        symbols_windows {
-            label = "SYMW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                        &kp N9     &kp N8       &kp N7       &none             &none         &kp ASTRK     &kp BSLH     &kp SLASH     
-&kp COMMA   &kp DOT     &kp N2     &kp N1       &kp N0       &kp MINUS         &kp SEMI      SK(LSHIFT)    SK(LCTRL)     SK(LALT)     &kp GRAVE &none 
-            &kp N3      &kp N6     &kp N5       &kp N4       &kp EQUAL         &kp COLON     &kp QMARK     &kp EXCL     &kp DLLR      SK(LGUI) 
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans        &trans            &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
 };
 
 };
