@@ -95,8 +95,8 @@
 // TODO Find a place for missing symbols: #, &
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                     &kp UNDERSCORE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET     &kp EXCLAMATION &kp LESS_THAN        &kp GREATER_THAN      &kp EQUAL
-&none &none         &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK  &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS         &kp SEMICOLON  &kp AT_SIGN
-      &kp BACKSLASH &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE     &kp PLUS        &kp PERCENT          &kp DOUBLE_QUOTES     &kp SINGLE_QUOTES &kp COLON
+&none &none         &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK  &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS        &kp SEMICOLON  &kp AT_SIGN
+      &kp BACKSLASH &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE     &kp PLUS        &kp PERCENT          &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE &kp COLON
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
