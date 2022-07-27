@@ -45,7 +45,7 @@ COMBO(esc, &kp ESC, 23 30, ALPHA_ALL)
 COMBO(sym1h, &macro_sym, 30 31, ALPHA_ALL)
 
 /* bluetooth */
-GCOMBO(bt_clear, &bt BT_CLR, 8 13)
+COMBO(bt_clear, &bt BT_CLR, 8 13, NEO)
 COMBO(bt_0, &bt BT_SEL 0, 9 0, NAV)
 COMBO(bt_1, &bt BT_SEL 1, 0 1, NAV)
 COMBO(bt_2, &bt BT_SEL 2, 1 2, NAV)
