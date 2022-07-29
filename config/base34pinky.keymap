@@ -81,8 +81,8 @@
 // TODO Find a place for missing letters: Ü, Ö, Ä, (ẞ) - find the names
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp V         &kp L         &kp C         &kp W             &kp K       &kp H         &kp G         &kp F
-&kp X   &kp X         &kp I         &kp A         &kp E         &kp O             &kp S       &kp N         &kp R         &kp T         &kp Q        &kp Y
-        &kp U         &kp I        &kp A         &kp P         &kp Z             &kp B       &kp M         &kp COMMA     &kp DOT       &kp D
+&kp TAB &kp X         &kp I         &kp A         &kp E         &kp O             &kp S       &kp N         &kp R         &kp T         &kp Q        &kp Y
+        &kp U         &kp I         &kp A         &kp P         &kp Z             &kp B       &kp M         &kp COMMA     &kp DOT       &kp D
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -108,8 +108,8 @@
         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                     &kp BACKSPACE &kp UP      &kp DELETE     &kp PAGE_DOWN          &kp N7        &kp N8        &kp N9        &kp PLUS
-&none &kp PAGE_UP   &kp LEFT      &kp DOWN    &kp RIGHT      &kp END                &kp N4        &kp N5        &kp N6        &kp MINUS      &kp SEMICOLON  &kp DOT
-      &kp HOME      &kp TAB       &kp INSERT  &kp RETURN     &kp RETURN             &kp N1        &kp N2        &kp N3        &kp EQUAL      &kp COMMA
+SK(LGUI) &kp PAGE_UP &kp LEFT      &kp DOWN    &kp RIGHT      &kp END                &kp N4        &kp N5        &kp N6        &kp MINUS      &kp SEMICOLON  &kp DOT
+        &kp HOME    &kp TAB       &kp INSERT  &kp RETURN     &kp RETURN             &kp N1        &kp N2        &kp N3        &kp EQUAL      &kp COMMA
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
