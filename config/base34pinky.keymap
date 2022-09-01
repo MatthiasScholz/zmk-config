@@ -92,11 +92,11 @@
         neosym {
         label = "NEOSYM";
         bindings = <
-// TODO Find a place for missing symbols: #, &
+// TODO Find a place for missing symbols:
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                       &kp UNDERSCORE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET    &kp EXCLAMATION &kp LESS_THAN        &kp GREATER_THAN      &kp EQUAL
-SK(LCTL) &kp BACKSLASH &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS &kp PERCENT   &kp AT_SIGN
-         &kp HASH      &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE    &kp COLON       &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE      &kp PLUS  &kp SEMICOLON
+                       &kp UNDERSCORE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET    &kp EXCLAMATION &kp LESS_THAN        &kp GREATER_THAN      &kp AMPERSAND
+SK(LCTL) &kp BACKSLASH &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS  &kp PERCENT   &kp AT_SIGN
+         &kp HASH      &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE    &kp COLON       &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE      &kp EQUAL  &kp SEMICOLON
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
