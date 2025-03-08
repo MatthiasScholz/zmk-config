@@ -96,7 +96,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮         ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                        &kp UNDERSCORE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp CARET    &kp EXCLAMATION &kp LESS_THAN        &kp GREATER_THAN      &kp EQUAL
 SK(LCTL) &kp BACKSLASH &kp SLASH      &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp ASTERISK &kp QUESTION    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp MINUS     &kp PERCENT   &kp AT_SIGN
-         &kp HASH      &kp DOLLAR     &kp PIPE         &kp TILDE2         &kp GRAVE    &kp COLON       &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE      &kp AMPERSAND &kp SEMICOLON
+         &kp HASH      &kp DOLLAR     &kp PIPE         &kp TILDE         &kp GRAVE    &kp COLON       &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE      &kp AMPERSAND &kp SEMICOLON
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤         ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE              &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯         ╰─────────────┴─────────────╯
