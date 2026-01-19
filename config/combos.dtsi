@@ -19,6 +19,10 @@ compatible = "zmk,combos";
 
 #define ALPHA_ALL NEO HDN
 
+/* Special key navigation */
+COMBO(special_back, &kp LGUI LALT LEFT ,10 11, NEONAV)
+COMBO(special_forward, &kp LGUI LALT RIGHT ,11 12, NEONAV)
+
 /* Missing alpha */
 COMBO(dot, &kp DOT, 11 12, SYM) // . for sym
 COMBO(comma, &kp COMMA, 10 11, SYM) // , for sym
