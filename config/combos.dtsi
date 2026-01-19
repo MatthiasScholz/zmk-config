@@ -20,20 +20,20 @@ compatible = "zmk,combos";
 #define ALPHA_ALL NEO HDN
 
 /* Special key navigation */
-COMBO(special_back, &kp LGUI LALT LEFT ,10 11, NEONAV)
-COMBO(special_forward, &kp LGUI LALT RIGHT ,11 12, NEONAV)
+COMBO(special_back, &kp LG(LA(LEFT)), 10 11, ALPHA_ALL)
+COMBO(special_forward, &kp LG(LA(RIGHT)), 11 12, ALPHA_ALL)
 
 /* Missing alpha */
-COMBO(dot, &kp DOT, 11 12, SYM) // . for sym
-COMBO(comma, &kp COMMA, 10 11, SYM) // , for sym
+//COMBO(dot, &kp DOT, 11 12, SYM) // . for sym
+//COMBO(comma, &kp COMMA, 10 11, SYM) // , for sym
 
 /* Brackets */
-COMBO(left_bracket, &kp LBKT, 0 10, ALPHA_ALL)
-COMBO(right_bracket, &kp RBKT, 7 17, ALPHA_ALL)
-COMBO(left_parenthesis, &kp LPAR, 1 11, ALPHA_ALL)
-COMBO(right_parenthesis, &kp RPAR, 6 16, ALPHA_ALL)
-COMBO(left_brace, &kp LBRC, 2 12, ALPHA_ALL)
-COMBO(right_brace, &kp RBRC, 5 15, ALPHA_ALL)
+//COMBO(left_bracket, &kp LBKT, 0 10, ALPHA_ALL)
+//COMBO(right_bracket, &kp RBKT, 7 17, ALPHA_ALL)
+//COMBO(left_parenthesis, &kp LPAR, 1 11, ALPHA_ALL)
+//COMBO(right_parenthesis, &kp RPAR, 6 16, ALPHA_ALL)
+//COMBO(left_brace, &kp LBRC, 2 12, ALPHA_ALL)
+//COMBO(right_brace, &kp RBRC, 5 15, ALPHA_ALL)
 
 /* Text */
 //COMBO(redo, &kp LG(LS(Z)), 2 3, ALPHA_ALL)
